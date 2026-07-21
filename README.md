@@ -1,3 +1,11 @@
+# Pinseek monitor daemon
+
+This fork keeps Pinseek's protected server-side tee-time sweep running once per
+minute. Each scheduled job covers 5½ hours; later cron jobs overlap safely
+because Pinseek deduplicates matches in its database.
+
+## Upstream project
+
 # openai-status-alerts
 
 A lightweight prototype that monitors [status.openai.com](https://status.openai.com) and sends Slack alerts filtered by product/service (e.g., ChatGPT, API, GPT-4o).
